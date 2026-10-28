@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Course home page">
+    <meta name="author" content="Joe Chu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <title>WDD 231 - Course Home Page</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span class="title-text">Joe Chu - WDD 231</span>
+        </div>
+        <button id="menu" class="hamburger" aria-label="Menu"></button>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="chamber/index.html">Chamber Project</a>
+            <a href="project/index.html">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>My name is Joe Chu, and I am a 26-year-old creative professional and student from Peru. I am passionate about storytelling through media, and I work as a photographer and videographer while continuing my education. I have been studying online at Brigham Young University–Idaho since March 2026, and I am currently completing my final required course, WDD 231, to earn my first academic certificate.</p>
+            <p>I am married, and my wife and I share our home with two energetic 7-month-old puppies. Dedicated to service and personal growth, I served a full-time mission in the Taiwan Taipei Mission from 2019 to 2021. That experience broadened my perspective and allowed me to become fluent in Mandarin Chinese, which I speak alongside my native Spanish and English.</p>
+        </section>
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile-picture.webp" alt="Student Photo">
+        </section>
+        <section class="certificate-courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div class="courses"></div>
+            <p id="total-credits">The total credits for courses listed above is <span>0</span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Joe Chu • Peru</p>
+        <p id="lastModified">Last Modification: <span id="last-modified-date"></span></p>
+    </footer>
+</body>
+</html>
