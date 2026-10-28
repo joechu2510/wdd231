@@ -73,7 +73,8 @@ nav a {
 }
 
 nav a:hover, nav a.active {
-    background-color: #1abc9c;
+    background-color: #0f766e;
+    color: #fff;
 }
 
 main {
@@ -145,7 +146,7 @@ section img {
 }
 
 .filters button:hover {
-    background-color: #1abc9c;
+    background-color: #0f766e;
 }
 
 .courses {
@@ -199,5 +200,5 @@ footer {
 }
 
 .social-links a:hover {
-    color: #1abc9c;
+    color: #0f766e;
 }
