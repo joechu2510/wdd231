@@ -1,0 +1,18 @@
+{
+    "familyName": "Chu",
+    "moveInDate": "2026-03-01",
+    "numberOfPeople": 2,
+    "visitedByTheBishop": true,
+    "familyMembers": [
+        {
+            "name": "Joe",
+            "gender": "Male",
+            "birthday": "2000-10-25"
+        },
+        {
+            "name": "Maria Fernanda",
+            "gender": "Female",
+            "birthday": "2000-05-21"
+        }
+    ]
+}
