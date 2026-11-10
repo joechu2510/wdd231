@@ -1,0 +1,56 @@
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+    }
+
+    .header-container {
+        width: auto;
+        justify-content: flex-start;
+    }
+
+    .chamber-title {
+        font-size: 1.4rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    nav ul.navigation {
+        display: flex !important;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin: 0;
+    }
+
+    nav ul.navigation li a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+        padding: 2rem 4rem;
+    }
+
+    .footer-info, .footer-social, .footer-dev {
+        flex: 1;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-dev {
+        text-align: right;
+    }
+}

@@ -1,0 +1,247 @@
+:root {
+    --primary-color: #1b263b;
+    --secondary-color: #415a77;
+    --accent-color: #e0a96d;
+    --text-color: #333333;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.chamber-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: -35px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+#menu::before {
+    content: "\f0c9";
+}
+
+#menu.show::before {
+    content: "\f00d";
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul.navigation.show {
+    display: flex;
+}
+
+nav ul.navigation li a {
+    display: block;
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav ul.navigation li a:hover,
+nav ul.navigation li a.active {
+    background-color: var(--secondary-color);
+}
+
+main {
+    flex: 1;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.view-buttons button {
+    padding: 0.5rem 1.25rem;
+    border: 1px solid var(--secondary-color);
+    background-color: white;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.view-buttons button.active,
+.view-buttons button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+#cards.grid section {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards.grid section img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+#cards.grid section h3 {
+    margin: 0.5rem 0;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+#cards.grid section p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+#cards.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#cards.list section {
+    background-color: var(--card-bg);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.2fr 1.5fr;
+    gap: 1rem;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#cards.list section:nth-child(even) {
+    background-color: #f0f4f8;
+}
+
+#cards.list section img {
+    display: none;
+}
+
+#cards.list section h3 {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+#cards.list section p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-info p, .footer-dev p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.footer-social a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: var(--accent-color);
+}

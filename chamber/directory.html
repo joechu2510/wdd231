@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Anita Chamber of Commerce - Directory</title>
+    <meta name="description" content="Directory page for the Santa Anita Chamber of Commerce in Lima, Peru, showcasing local member businesses, sponsors, and community services.">
+    <meta name="author" content="Joe Chu">
+
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Santa Anita Chamber of Commerce Directory">
+    <meta property="og:description" content="Discover local businesses and services associated with the Santa Anita Chamber of Commerce in Lima, Peru.">
+    <meta property="og:image" content="https://joechu2510.github.io/wdd231/images/profile-picture.webp">
+    <meta property="og:url" content="https://joechu2510.github.io/wdd231/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/chamber/styles/small.css">
+    <link rel="stylesheet" href="/chamber/styles/larger.css">
+
+    <script src="/chamber/scripts/directory.js" defer></script>
+    <script src="/chamber/scripts/date.js" defer></script>
+    <script src="/chamber/scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.webp" alt="Santa Anita Chamber Logo" class="logo">
+            <span class="chamber-title">Santa Anita Chamber of Commerce</span>
+        </div>
+        <button id="menu" aria-label="Open Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Directory</h1>
+        
+        <div class="view-buttons">
+            <button id="grid" class="active" title="Grid View">Grid</button>
+            <button id="list" title="List View">List</button>
+        </div>
+
+        <div id="cards" class="grid"></div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <h3>Santa Anita Chamber of Commerce</h3>
+            <p>Av. Los Eucaliptos 456</p>
+            <p>Santa Anita, Lima, Perú</p>
+            <p>info@santaanitacc.pe</p>
+            <p>+51 (01) 555-7890</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footer-dev">
+            <p>WDD231 Class Project</p>
+            <p>Joe Chu</p>
+            <p>&copy; <span id="currentyear"></span> Santa Anita Chamber of Commerce</p>
+            <p id="lastModified">Last Modification: <span id="last-modified-date"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

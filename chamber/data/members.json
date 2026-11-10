@@ -1,0 +1,65 @@
+[
+  {
+    "name": "J&M Signature Media",
+    "address": "Av. Los Eucaliptos 123, Santa Anita, Lima",
+    "phone": "+51 (01) 555-0101",
+    "website": "https://jmsignature.pe",
+    "image": "images/jym.webp",
+    "membership": 3,
+    "description": "Professional photography and videography services for corporate and social events."
+  },
+  {
+    "name": "Corporación Textil Santa Anita",
+    "address": "Av. Ruiseñores 456, Santa Anita, Lima",
+    "phone": "+51 (01) 555-0102",
+    "website": "https://textilsantaanita.pe",
+    "image": "images/textil-peru.webp",
+    "membership": 3,
+    "description": "Manufacturing and distribution of high-quality textile apparel."
+  },
+  {
+    "name": "Restaurante Sabor Criollo",
+    "address": "Calle Las Alondras 789, Santa Anita, Lima",
+    "phone": "+51 (01) 555-0103",
+    "website": "https://saborcriollo.pe",
+    "image": "images/sabor-criollo.webp",
+    "membership": 2,
+    "description": "Traditional Peruvian gastronomy and institutional catering services."
+  },
+  {
+    "name": "Ferretería & Construcción El Roble",
+    "address": "Av. Imperial 234, Santa Anita, Lima",
+    "phone": "+51 (01) 555-0104",
+    "website": "https://ferreteriaelroble.pe",
+    "image": "images/el-roble.webp",
+    "membership": 2,
+    "description": "Sale of construction materials, hardware, and home finishing products."
+  },
+  {
+    "name": "Clínica Dental Santa Anita",
+    "address": "Av. Carlos Izaguirre 567, Santa Anita, Lima",
+    "phone": "+51 (01) 555-0105",
+    "website": "https://dentalsantaanita.pe",
+    "image": "images/orthocadent.webp",
+    "membership": 1,
+    "description": "Comprehensive dental care, orthodontics, and aesthetic dentistry."
+  },
+  {
+    "name": "Supermercado El Sol",
+    "address": "Av. Metropolitana 890, Santa Anita, Lima",
+    "phone": "+51 (01) 555-0106",
+    "website": "https://superelsol.pe",
+    "image": "images/sol.webp",
+    "membership": 1,
+    "description": "Supply of groceries, fresh products, and essential everyday items."
+  },
+  {
+    "name": "TechSolutions Perú",
+    "address": "Calle Los Ruiseñores 321, Santa Anita, Lima",
+    "phone": "+51 (01) 555-0107",
+    "website": "https://techsolutions.pe",
+    "image": "images/tech-solutions.webp",
+    "membership": 3,
+    "description": "Technical support, computer hardware maintenance, and local web development."
+  }
+]
