@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santa Anita Chamber of Commerce - Home Page</title>
+    <meta
+      name="description"
+      content="Santa Anita Chamber of Commerce home page - WDD 231 project; main page displaying the most relevant information on the site."
+    />
+    <meta name="author" content="Joe Chu" />
+
+    <link rel="icon" href="favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta
+      property="og:title"
+      content="Santa Anita Chamber of Commerce Home Page"
+    />
+    <meta
+      property="og:description"
+      content="Santa Anita Chamber of Commerce home page - WDD 231 project; main page displaying the most relevant information on the site."
+    />
+    <meta
+      property="og:image"
+      content="https://joechu2510.github.io/wdd231/chamber/images/logo.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://joechu2510.github.io/wdd231/index.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img
+          src="images/logo.webp"
+          alt="Santa Anita Chamber Logo"
+          class="logo"
+        />
+        <span class="chamber-title">Santa Anita Chamber of Commerce</span>
+      </div>
+      <button id="menu" aria-label="Open Navigation Menu"></button>
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <img src="images/hero.webp" alt="hero image" />
+        <div class="hero-msg">
+          <h1>Welcome to Santa Anita</h1>
+          <a href="join.html" class="cta-button">Join the Chamber!</a>
+        </div>
+      </div>
+      <div class="home-grid">
+        <section class="current-event">
+          <h2>Current Events</h2>
+          <p>
+            <strong>Business Networking Breakfast:</strong> Join local
+            entrepreneurs this Friday at 9:00 AM at the Santa Anita Municipal
+            Center.
+          </p>
+        </section>
+
+        <section class="weather">
+          <h2>Weather</h2>
+          <div id="current-weather"></div>
+          <div id="weather-forecast"></div>
+        </section>
+
+        <section class="spotlights">
+          <h2>Company Spotlights</h2>
+          <div id="spotlight-container" class="spotlight-grid"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <h3>Santa Anita Chamber of Commerce</h3>
+        <p>Av. Los Eucaliptos 456</p>
+        <p>Santa Anita, Lima, Perú</p>
+        <p>info@santaanitacc.pe</p>
+        <p>+51 (01) 555-7890</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <div class="footer-dev">
+        <p>WDD231 Class Project</p>
+        <p>Joe Chu</p>
+        <p>
+          &copy; <span id="currentyear"></span> Santa Anita Chamber of Commerce
+        </p>
+        <p id="lastModified">
+          Last Modification: <span id="last-modified-date"></span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
