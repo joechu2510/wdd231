@@ -344,7 +344,8 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-/* Estilos para Clima en Home */
+/* for the index/weather.js */
+
 #current-weather {
   display: flex;
   align-items: center;
@@ -376,7 +377,8 @@ footer {
   margin: 0 0.25rem;
 }
 
-/* Estilos adicionales para Spotlights */
+/* for the index/spotlight section */
+
 .membership-level {
   font-weight: bold;
   font-size: 0.85rem;
