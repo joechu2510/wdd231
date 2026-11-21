@@ -76,19 +76,18 @@ const courses = [
         ],
         completed: false
     }
-]
+];
 
 const coursesContainer = document.querySelector('.courses');
 const totalCreditsElem = document.querySelector('#total-credits span');
-const allBtn = document.querySelector('.filters button:nth-child(1)');
-const wddBtn = document.querySelector('.filters button:nth-child(2)');
-const cseBtn = document.querySelector('.filters button:nth-child(3)');
+const courseDetails = document.querySelector('#course-details');
 
 function displayCourses(filteredCourses) {
     coursesContainer.innerHTML = '';
 
     filteredCourses.forEach(course => {
-        const card = document.createElement('div');
+        const card = document.createElement('button');
+        card.type = 'button';
         card.classList.add('course-card');
 
         if (course.completed) {
@@ -98,12 +97,46 @@ function displayCourses(filteredCourses) {
             card.innerHTML = `${course.subject} ${course.number}`;
         }
 
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
         coursesContainer.appendChild(card);
     });
 
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     totalCreditsElem.textContent = totalCredits;
 }
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal" type="button" aria-label="Close">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    courseDetails.querySelector('#closeModal').addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
+let mouseDownOnBackdrop = false;
+
+courseDetails.addEventListener('mousedown', (event) => {
+    mouseDownOnBackdrop = event.target === courseDetails;
+});
+
+courseDetails.addEventListener('click', (event) => {
+    if (event.target === courseDetails && mouseDownOnBackdrop) {
+        courseDetails.close();
+    }
+    mouseDownOnBackdrop = false;
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     displayCourses(courses);

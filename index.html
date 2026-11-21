@@ -35,7 +35,7 @@
             <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
             <span class="title-text">Joe Chu - WDD 231</span>
         </div>
-        <button id="menu" class="hamburger" aria-label="Menu"></button>
+        <button id="menu" type="button" class="hamburger" aria-label="Menu"></button>
         <nav>
             <a href="index.html" class="active">Home</a>
             <a href="chamber/index.html">Chamber Project</a>
@@ -63,13 +63,14 @@
         <section class="certificate-courses">
             <h2>Web Certificate Courses</h2>
             <div class="filters">
-                <button>All</button>
-                <button>CSE</button>
-                <button>WDD</button>
+                <button type="button">All</button>
+                <button type="button">CSE</button>
+                <button type="button">WDD</button>
             </div>
             <div class="courses"></div>
             <p id="total-credits">The total credits for courses listed above is <span>0</span></p>
         </section>
+        <dialog id="course-details"></dialog>
     </main>
 
     <footer>

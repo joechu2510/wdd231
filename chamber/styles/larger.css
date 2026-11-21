@@ -73,3 +73,14 @@
     text-align: right;
   }
 }
+
+/* join page desktop */
+
+@media (min-width: 768px) {
+    .join-layout {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        align-items: start;
+        gap: 2rem;
+    }
+} 

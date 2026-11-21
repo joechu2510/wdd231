@@ -156,16 +156,32 @@ section img {
 }
 
 .course-card {
+    font-family: inherit;
+    font-size: 1rem;
     background-color: #e0e0e0;
+    color: #333;
+    border: 1px solid #c8c8c8;
     padding: 1rem;
     text-align: center;
     border-radius: 4px;
     font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.course-card:hover,
+.course-card:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.16);
+    outline: 2px solid #0f766e;
+    outline-offset: 2px;
 }
 
 .course-card.completed {
     background-color: #d4edda;
     color: #155724;
+    border-color: #a3cfbb;
 }
 
 #total-credits {
@@ -216,4 +232,49 @@ footer {
   font-weight: 400;
   font-display: swap;
   src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/webfonts/fa-brands-400.woff2') format('woff2');
+}
+
+dialog {
+    margin: auto;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 0.4rem;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem rgb(0 0 0 / 35%);
+    width: 90%;
+    max-width: 600px;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog h2 {
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+dialog h3 {
+    color: #0f766e;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+dialog p {
+    margin-bottom: 0.5rem;
+}
+
+dialog button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 0.4rem 0.7rem;
+    border: 1px solid rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    background-color: #f4f4f9;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background-color: #e0e0e0;
 }

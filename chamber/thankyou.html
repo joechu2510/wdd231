@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Santa Anita Chamber of Commerce - Thank You</title>
+        <meta
+            name="description"
+            content="Confirmation page for Santa Anita Chamber of Commerce membership applications."
+        >
+        <meta name="author" content="Joe Chu">
+
+        <link rel="icon" href="favicon.ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        >
+
+        <meta
+            property="og:title"
+            content="Santa Anita Chamber of Commerce - Application Received"
+        >
+        <meta
+            property="og:description"
+            content="Confirmation page for Santa Anita Chamber of Commerce membership applications."
+        >
+        <meta
+            property="og:image"
+            content="https://joechu2510.github.io/wdd231/chamber/images/hero.webp"
+        >
+        <meta
+            property="og:url"
+            content="https://joechu2510.github.io/wdd231/chamber/thankyou.html"
+        >
+        <meta property="og:type" content="website">
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        >
+
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/thankyou.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-container">
+                <img
+                    src="images/logo.webp"
+                    alt="Santa Anita Chamber Logo"
+                    class="logo"
+                >
+                <span class="chamber-title">Santa Anita Chamber of Commerce</span>
+            </div>
+            <button id="menu" aria-label="Open Navigation Menu"></button>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="join-main">
+            <h1>Membership Application Received</h1>
+
+            <section class="thankyou-card">
+                <h2>Thank you for applying to join the Santa Anita Chamber of Commerce!</h2>
+                <p>We have received your membership request with the following required details:</p>
+
+                <div id="application-summary" class="thankyou-details"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-info">
+                <h3>Santa Anita Chamber of Commerce</h3>
+                <p>Av. Los Eucaliptos 456</p>
+                <p>Santa Anita, Lima, Perú</p>
+                <p>info@santaanitacc.pe</p>
+                <p>+51 (01) 555-7890</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="footer-dev">
+                <p>WDD231 Class Project</p>
+                <p>Joe Chu</p>
+                <p>&copy; <span id="currentyear"></span> Santa Anita Chamber of Commerce</p>
+                <p id="lastModified">Last Modification: <span id="last-modified-date"></span></p>
+            </div>
+        </footer>
+    </body>
+</html>
