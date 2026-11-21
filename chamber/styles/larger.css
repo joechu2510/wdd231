@@ -22,8 +22,9 @@
     width: auto;
   }
 
-  nav ul.navigation {
-    display: flex !important;
+  header nav ul.navigation,
+  header nav ul.navigation.show {
+    display: flex;
     flex-direction: row;
     gap: 1.5rem;
     margin: 0;
@@ -72,15 +73,11 @@
   .footer-dev {
     text-align: right;
   }
+
+  .join-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    align-items: start;
+    gap: 2rem;
+  }
 }
-
-/* join page desktop */
-
-@media (min-width: 768px) {
-    .join-layout {
-        display: grid;
-        grid-template-columns: 1.4fr 1fr;
-        align-items: start;
-        gap: 2rem;
-    }
-} 
